@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<style name="MoreCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+  	 <item name="android:button">@drawable/checkbox_more</item>
+
+  	
+
+  	</style> 
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_myprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_myprofile_pb_refreshwait"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/header_myprofile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/refreshable_listview_arrow" />
+
+        <ProgressBar
+            android:id="@+id/header_myprofile_progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/header_myprofile_tv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:text="Pull down to update" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="#3c3c3c"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/header_myprofile_iv_pic"
+                android:layout_width="@dimen/list_header_other_iv_wid"
+                android:layout_height="@dimen/list_header_other_iv_hei"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="2dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/place" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/header_myprofile_llt_add_001"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_profile_footeyeheart"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_profile_foot"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/header_myprofile_tv_visitcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="1000"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_profile_footeyeheart"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/btn_profile_eye"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/header_myprofile_tv_beattentionnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dip"
+                        android:text="1000"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_profile_footeyeheart"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_profile_heart"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/header_myprofile_tv_belovenum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:text="1000"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_myprofile_direct"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/header_myprofile_ll_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/main_llt_word"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/moretext_bg_blog_log" >
+
+                <TextView
+                    android:id="@+id/header_myprofile_tv_signature"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="街子的雨夜，静谧得让人心醉。调皮的雨滴伙同一向严厉的青石板~"
+                    android:textColor="#555555"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_llt_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/header_myprofile_img_add_blog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/walkingblog_btn_profile"
+                    android:contentDescription="@string/app_name" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header_myprofile_pb_sendwait"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal|center_vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar_myprofile_updatelog"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/header_myprofile_tv_sendok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_myprofile_tv_sendok" />
+    </LinearLayout>
+
+</LinearLayout>

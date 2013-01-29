@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+   
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="45dip"
+    android:background="#dfffffff"
+    android:gravity="center_vertical"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <ImageView
+        android:id="@+id/log_list_userimg_h"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/pic_log_unit" >
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="5dip"
+        android:layout_toRightOf="@+id/log_list_userimg_h"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/log_list_tv_nickname_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="我的名字"
+            android:textColor="#171717" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_list_tv_nickname_h"
+            android:layout_marginTop="5dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dip"
+                android:background="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/log_list_tv_location_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:text="四川成都"
+                android:textColor="#878787"
+                android:textSize="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/log_list_lltime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/log_list_iv_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_blog_clock" />
+
+            <TextView
+                android:id="@+id/log_list_time_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="2h"
+                android:textColor="#636363"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

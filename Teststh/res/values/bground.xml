@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 界面字体及背景颜色设置 -->
+<resources>
+
+	<drawable name="main_bg">#fdf9ea</drawable>
+	<drawable name="word_main">#0e1012</drawable>
+	<drawable name="word_vice">#ff9b2f</drawable>
+	<drawable name="activity_detail_sperate">#FF909090</drawable>
+	<drawable name="profile_bg">#a9adae</drawable>
+	<drawable name="activity_separate_color">#cccccc</drawable>
+	<drawable name="black">#343933</drawable>
+	<drawable name="listview_selector_color">#fbbb32</drawable>
+	<drawable name="profile_update">#ffc148</drawable>
+	<drawable name="bg_log_replay_normal">#CCCCCC</drawable>
+	<drawable name="album_bg">#dfdcd1</drawable>
+	<drawable name="orange">#ff8c1c</drawable>
+	<drawable name="white">#FFFFFF</drawable>
+	<drawable name="greenwater">#e8eff1</drawable>
+	<drawable name="green">#4e885e</drawable>
+
+</resources>

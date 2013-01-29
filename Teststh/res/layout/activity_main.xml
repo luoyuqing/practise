@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:id="@+id/log_write"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_myprofile_direct"
+        android:orientation="horizontal" 
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/header_myprofile_ll_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/main_llt_word"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/moretext_bg_blog_log" >
+
+                <TextView
+                    android:id="@+id/header_myprofile_tv_signature"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="街子的雨夜，静谧得让人心醉。调皮的雨滴伙同一向严厉的青石板~"
+                    android:textColor="#555555"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_llt_tag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/header_myprofile_img_add_blog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/walkingblog_btn_profile"
+                    android:contentDescription="@string/app_name" >
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name" >
+        </ImageView>
+    </LinearLayout>
+    
+     <com.chance.teststh.PinnedList
+        android:id="@+id/section_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:cacheColorHint="#00000000"
+        android:divider="#dedbde"
+        android:dividerHeight="0dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:listSelector="#ffffff"
+        android:scrollingCache="false" />
+
+   
+
+</LinearLayout>
