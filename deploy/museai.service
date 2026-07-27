@@ -1,0 +1,17 @@
+[Unit]
+Description=MuseAI Web Server
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/MuseAI/server
+Environment=PORT=3001
+Environment=MUSEAI_BASIC_AUTH_USER=museai
+Environment=MUSEAI_BASIC_AUTH_PASS=As8k@123
+ExecStart=/usr/bin/node /home/ubuntu/MuseAI/server/index.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
